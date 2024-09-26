@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  studio: one
+  date: 2024-09-20
+  time: 2024-09-20 14:40:10
+  band: one
+
+two:
+  user: two
+  studio: two
+  date: 2024-09-20
+  time: 2024-09-20 14:40:10
+  band: two
