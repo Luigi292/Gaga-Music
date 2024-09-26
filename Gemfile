@@ -73,5 +73,7 @@ end
 
 gem 'devise'
 gem 'sprockets', '~> 4.2.1'
+gem 'sassc-rails'
+gem 'image_processing', '~> 1.2'              
 
 
