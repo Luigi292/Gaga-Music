@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>development.log - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+  var index_rel_prefix = "../";
+</script>
+
+<script src="../js/navigation.js" defer></script>
+<script src="../js/search.js" defer></script>
+<script src="../js/search_index.js" defer></script>
+<script src="../js/searcher.js" defer></script>
+<script src="../js/darkfish.js" defer></script>
+
+<link href="../css/fonts.css" rel="stylesheet">
+<link href="../css/rdoc.css" rel="stylesheet">
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search (/) for a class, method, ..." spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    
+<div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+    <li><a href="../2.html">2</a>
+    <li><a href="../Gemfile.html">Gemfile</a>
+    <li><a href="../Gemfile_lock.html">Gemfile.lock</a>
+    <li><a href="../README_md.html">README</a>
+    <li><a href="../Rakefile.html">Rakefile</a>
+    <li><details><summary>app</summary>
+    <ul class="link-list">
+      <li><a href="../app/assets/config/manifest_js.html">manifest.js</a>
+      <li><a href="../app/assets/stylesheets/application_scss.html">application.scss</a>
+      <li><a href="../app/assets/stylesheets/components/_alert_scss.html">_alert.scss</a>
+      <li><a href="../app/assets/stylesheets/components/_avatar_scss.html">_avatar.scss</a>
+      <li><a href="../app/assets/stylesheets/components/_form_legend_clear_scss.html">_form_legend_clear.scss</a>
+      <li><a href="../app/assets/stylesheets/components/_index_scss.html">_index.scss</a>
+      <li><a href="../app/assets/stylesheets/components/_navbar_scss.html">_navbar.scss</a>
+      <li><a href="../app/assets/stylesheets/config/_bootstrap_variables_scss.html">_bootstrap_variables.scss</a>
+      <li><a href="../app/assets/stylesheets/config/_colors_scss.html">_colors.scss</a>
+      <li><a href="../app/assets/stylesheets/config/_fonts_scss.html">_fonts.scss</a>
+      <li><a href="../app/assets/stylesheets/pages/_home_scss.html">_home.scss</a>
+      <li><a href="../app/assets/stylesheets/pages/_index_scss.html">_index.scss</a>
+      <li><a href="../app/assets/stylesheets/pages/_login_page_scss.html">_login_page.scss</a>
+      <li><a href="../app/assets/stylesheets/pages/_signup_page_scss.html">_signup_page.scss</a>
+      <li><a href="../app/javascript/application_js.html">application.js</a>
+      <li><a href="../app/javascript/controllers/application_js.html">application.js</a>
+      <li><a href="../app/javascript/controllers/hello_controller_js.html">hello_controller.js</a>
+      <li><a href="../app/javascript/controllers/index_js.html">index.js</a>
+    </ul></details>
+    <li><a href="../bin/bundle_cmd.html">bundle.cmd</a>
+    <li><a href="../config_ru.html">config.ru</a>
+    <li><details><summary>config</summary>
+    <ul class="link-list">
+      <li><a href="../config/credentials_yml_enc.html">credentials.yml.enc</a>
+      <li><a href="../config/master_key.html">master.key</a>
+    </ul></details>
+    <li><details open><summary>log</summary>
+    <ul class="link-list">
+      <li><a href="../log/development_log.html">development.log</a>
+      <li><a href="../log/test_log.html">test.log</a>
+    </ul></details>
+    <li><details><summary>public</summary>
+    <ul class="link-list">
+      <li><a href="../public/404_html.html">404.html</a>
+      <li><a href="../public/422_html.html">422.html</a>
+      <li><a href="../public/500_html.html">500.html</a>
+      <li><a href="../public/apple-touch-icon-precomposed_png.html">apple-touch-icon-precomposed.png</a>
+      <li><a href="../public/apple-touch-icon_png.html">apple-touch-icon.png</a>
+      <li><a href="../public/favicon_ico.html">favicon.ico</a>
+      <li><a href="../public/robots_txt.html">robots</a>
+    </ul></details>
+    <li><details><summary>tmp</summary>
+    <ul class="link-list">
+      <li><a href="../tmp/development_secret_txt.html">development_secret</a>
+      <li><a href="../tmp/restart_txt.html">restart</a>
+    </ul></details>
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page log/development.log">
+
+<pre>[1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL PRIMARY KEY)[0m
+[1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE &quot;ar_internal_metadata&quot; (&quot;key&quot; varchar NOT NULL PRIMARY KEY, &quot;value&quot; varchar, &quot;created_at&quot; datetime(6) NOT NULL, &quot;updated_at&quot; datetime(6) NOT NULL)[0m
+[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Migrating to <a href="../CreateUsers.html"><code>CreateUsers</code></a> (20240920133954)</p>
+
+<pre>[1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE &quot;users&quot; (&quot;id&quot; integer PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;name&quot; varchar, &quot;email&quot; varchar, &quot;password_digest&quot; varchar, &quot;role&quot; varchar, &quot;instrument&quot; varchar, &quot;created_at&quot; datetime(6) NOT NULL, &quot;updated_at&quot; datetime(6) NOT NULL)[0m
+[1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20240920133954&quot;]]
+[1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m</pre>
+
+<p>Migrating to <a href="../CreateBands.html"><code>CreateBands</code></a> (20240920133959)</p>
+
+<pre>[1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE &quot;bands&quot; (&quot;id&quot; integer PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;name&quot; varchar, &quot;description&quot; text, &quot;genre&quot; varchar, &quot;instrument_needs&quot; varchar, &quot;created_at&quot; datetime(6) NOT NULL, &quot;updated_at&quot; datetime(6) NOT NULL)[0m
+[1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20240920133959&quot;]]
+[1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m</pre>
+
+<p>Migrating to <a href="../CreateStudios.html"><code>CreateStudios</code></a> (20240920134005)</p>
+
+<pre>[1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE &quot;studios&quot; (&quot;id&quot; integer PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;name&quot; varchar, &quot;location&quot; varchar, &quot;availability&quot; varchar, &quot;price_per_hour&quot; decimal, &quot;created_at&quot; datetime(6) NOT NULL, &quot;updated_at&quot; datetime(6) NOT NULL)[0m
+[1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20240920134005&quot;]]
+[1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m</pre>
+
+<p>Migrating to <a href="../CreateBookings.html"><code>CreateBookings</code></a> (20240920134010)</p>
+
+<pre>[1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE &quot;bookings&quot; (&quot;id&quot; integer PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;user_id&quot; integer NOT NULL, &quot;studio_id&quot; integer NOT NULL, &quot;date&quot; date, &quot;time&quot; time, &quot;band_id&quot; integer NOT NULL, &quot;created_at&quot; datetime(6) NOT NULL, &quot;updated_at&quot; datetime(6) NOT NULL, CONSTRAINT &quot;fk_rails_ef0571f117&quot;</pre>
+
+<p>FOREIGN KEY (“user_id”)</p>
+
+<pre>REFERENCES &quot;users&quot; (&quot;id&quot;)</pre>
+
+<p>, CONSTRAINT “fk_rails_b918745ecb” FOREIGN KEY (“studio_id”)</p>
+
+<pre>REFERENCES &quot;studios&quot; (&quot;id&quot;)</pre>
+
+<p>, CONSTRAINT “fk_rails_c4150c30d6” FOREIGN KEY (“band_id”)</p>
+
+<pre>REFERENCES &quot;bands&quot; (&quot;id&quot;)</pre>
+
+<p>)[0m</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX &quot;index_bookings_on_user_id&quot; ON &quot;bookings&quot; (&quot;user_id&quot;)[0m
+[1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX &quot;index_bookings_on_studio_id&quot; ON &quot;bookings&quot; (&quot;studio_id&quot;)[0m
+[1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX &quot;index_bookings_on_band_id&quot; ON &quot;bookings&quot; (&quot;band_id&quot;)[0m
+[1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20240920134010&quot;]]
+[1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+[1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT &quot;ar_internal_metadata&quot;.* FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = ? LIMIT ?[0m  [[&quot;key&quot;, &quot;environment&quot;], [&quot;LIMIT&quot;, 1]]
+[1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO &quot;ar_internal_metadata&quot; (&quot;key&quot;, &quot;value&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?)[0m  [[&quot;key&quot;, &quot;environment&quot;], [&quot;value&quot;, &quot;development&quot;], [&quot;created_at&quot;, &quot;2024-09-20 13:40:23.445093&quot;], [&quot;updated_at&quot;, &quot;2024-09-20 13:40:23.445093&quot;]]
+[1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Migrating to <a href="../AddDeviseToUsers.html"><code>AddDeviseToUsers</code></a> (20240920134337)</p>
+
+<pre>[1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL[0m
+[1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m</pre>
+
+<p>Started GET “/” for ::1 at 2024-09-20 14:45:00 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>ActiveRecord::PendingMigrationError (</p>
+
+<p>Migrations are pending. To resolve this issue, run:</p>
+
+<pre>bin/rails db:migrate RAILS_ENV=development</pre>
+
+<p>You have 1 pending migration:</p>
+
+<p>20240920134337_add_devise_to_users.rb</p>
+
+<p>):</p>
+
+<p>activerecord (7.0.8.4) lib/active_record/migration.rb:662:in ‘check_pending!’ activerecord (7.0.8.4) lib/active_record/migration.rb:627:in ‘block (2 levels) in call’ activesupport (7.0.8.4) lib/active_support/file_update_checker.rb:83:in ‘execute’ activerecord (7.0.8.4) lib/active_record/migration.rb:632:in ‘block in call’ activerecord (7.0.8.4) lib/active_record/migration.rb:624:in ‘synchronize’ activerecord (7.0.8.4) lib/active_record/migration.rb:624:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in ‘block in call’ activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in ‘run_callbacks’ actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in ‘call’ web-console (4.2.1) lib/web_console/middleware.rb:132:in ‘call_app’ web-console (4.2.1) lib/web_console/middleware.rb:28:in ‘block in call’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘catch’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in ‘call’ railties (7.0.8.4) lib/rails/rack/logger.rb:40:in ‘call_app’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘block in call’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘block in tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in ‘tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘tagged’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘call’ sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in ‘call’ rack (2.2.9) lib/rack/method_override.rb:24:in ‘call’ rack (2.2.9) lib/rack/runtime.rb:22:in ‘call’ activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in ‘block in call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in ‘collect_events’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in ‘call’ rack (2.2.9) lib/rack/sendfile.rb:110:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in ‘call’ railties (7.0.8.4) lib/rails/engine.rb:530:in ‘call’ puma (5.6.9) lib/puma/configuration.rb:252:in ‘call’ puma (5.6.9) lib/puma/request.rb:77:in ‘block in handle_request’ puma (5.6.9) lib/puma/thread_pool.rb:340:in ‘with_force_shutdown’ puma (5.6.9) lib/puma/request.rb:76:in ‘handle_request’ puma (5.6.9) lib/puma/server.rb:443:in ‘process_client’ puma (5.6.9) lib/puma/thread_pool.rb:147:in ‘block in spawn_thread’ Started POST “/rails/actions” for ::1 at 2024-09-20 14:45:09 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Migrating to <a href="../AddDeviseToUsers.html"><code>AddDeviseToUsers</code></a> (20240920134337)</p>
+
+<pre>[1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.5ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL[0m
+[1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m</pre>
+
+<p>StandardError (An error has occurred, this and all later migrations canceled:</p>
+
+<p>SQLite3::SQLException: duplicate column name: email):</p>
+
+<p>sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:177:in ‘initialize’ sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:177:in ‘new’ sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:177:in ‘prepare’ sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:221:in ‘execute’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3/database_statements.rb:32:in ‘block (2 levels) in execute’ activesupport (7.0.8.4) lib/active_support/concurrency/share_lock.rb:187:in ‘yield_shares’ activesupport (7.0.8.4) lib/active_support/dependencies/interlock.rb:41:in ‘permit_concurrent_loads’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3/database_statements.rb:31:in ‘block in execute’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘block in synchronize’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘synchronize’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract_adapter.rb:752:in ‘block in log’ activesupport (7.0.8.4) lib/active_support/notifications/instrumenter.rb:24:in ‘instrument’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract_adapter.rb:743:in ‘log’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3/database_statements.rb:30:in ‘execute’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:628:in ‘add_column’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3_adapter.rb:250:in ‘add_column’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:633:in ‘column’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:274:in ‘block in string’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:274:in ‘each’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:274:in ‘string’ db/migrate/20240920134337_add_devise_to_users.rb:7:in ‘block in up’ activerecord (7.0.8.4) lib/active_record/migration.rb:564:in ‘block in change_table’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:494:in ‘change_table’ activerecord (7.0.8.4) lib/active_record/migration.rb:965:in ‘block in method_missing’ activerecord (7.0.8.4) lib/active_record/migration.rb:935:in ‘block in say_with_time’ C:/Ruby33-x64/lib/ruby/3.3.0/benchmark.rb:298:in ‘measure’ activerecord (7.0.8.4) lib/active_record/migration.rb:935:in ‘say_with_time’ activerecord (7.0.8.4) lib/active_record/migration.rb:954:in ‘method_missing’ activerecord (7.0.8.4) lib/active_record/migration.rb:564:in ‘change_table’ activerecord (7.0.8.4) lib/active_record/migration.rb:695:in ‘method_missing’ db/migrate/20240920134337_add_devise_to_users.rb:5:in ‘up’ activerecord (7.0.8.4) lib/active_record/migration.rb:868:in ‘up’ activerecord (7.0.8.4) lib/active_record/migration.rb:908:in ‘public_send’ activerecord (7.0.8.4) lib/active_record/migration.rb:908:in ‘exec_migration’ activerecord (7.0.8.4) lib/active_record/migration.rb:889:in ‘block (2 levels) in migrate’ C:/Ruby33-x64/lib/ruby/3.3.0/benchmark.rb:298:in ‘measure’ activerecord (7.0.8.4) lib/active_record/migration.rb:888:in ‘block in migrate’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:215:in ‘with_connection’ activerecord (7.0.8.4) lib/active_record/migration.rb:887:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:1095:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:1409:in ‘block in execute_migration_in_transaction’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/transaction.rb:319:in ‘block in within_new_transaction’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘block in synchronize’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘synchronize’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/transaction.rb:317:in ‘within_new_transaction’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/database_statements.rb:316:in ‘transaction’ activerecord (7.0.8.4) lib/active_record/transactions.rb:209:in ‘transaction’ activerecord (7.0.8.4) lib/active_record/migration.rb:1460:in ‘ddl_transaction’ activerecord (7.0.8.4) lib/active_record/migration.rb:1408:in ‘execute_migration_in_transaction’ activerecord (7.0.8.4) lib/active_record/migration.rb:1382:in ‘each’ activerecord (7.0.8.4) lib/active_record/migration.rb:1382:in ‘migrate_without_lock’ activerecord (7.0.8.4) lib/active_record/migration.rb:1333:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:1166:in ‘up’ activerecord (7.0.8.4) lib/active_record/migration.rb:1141:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/tasks/database_tasks.rb:262:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:137:in ‘block in &lt;class:PendingMigrationError&gt;’ activesupport (7.0.8.4) lib/active_support/actionable_error.rb:28:in ‘dispatch’ actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:19:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in ‘call’ web-console (4.2.1) lib/web_console/middleware.rb:132:in ‘call_app’ web-console (4.2.1) lib/web_console/middleware.rb:28:in ‘block in call’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘catch’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in ‘call’ railties (7.0.8.4) lib/rails/rack/logger.rb:40:in ‘call_app’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘block in call’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘block in tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in ‘tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘tagged’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘call’ sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in ‘call’ rack (2.2.9) lib/rack/method_override.rb:24:in ‘call’ rack (2.2.9) lib/rack/runtime.rb:22:in ‘call’ activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in ‘block in call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in ‘collect_events’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in ‘call’ rack (2.2.9) lib/rack/sendfile.rb:110:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in ‘call’ railties (7.0.8.4) lib/rails/engine.rb:530:in ‘call’ puma (5.6.9) lib/puma/configuration.rb:252:in ‘call’ puma (5.6.9) lib/puma/request.rb:77:in ‘block in handle_request’ puma (5.6.9) lib/puma/thread_pool.rb:340:in ‘with_force_shutdown’ puma (5.6.9) lib/puma/request.rb:76:in ‘handle_request’ puma (5.6.9) lib/puma/server.rb:443:in ‘process_client’ puma (5.6.9) lib/puma/thread_pool.rb:147:in ‘block in spawn_thread’ Started POST “/rails/actions” for ::1 at 2024-09-20 14:45:42 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Migrating to <a href="../AddDeviseToUsers.html"><code>AddDeviseToUsers</code></a> (20240920134337)</p>
+
+<pre>[1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL[0m
+[1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m</pre>
+
+<p>StandardError (An error has occurred, this and all later migrations canceled:</p>
+
+<p>SQLite3::SQLException: duplicate column name: email):</p>
+
+<p>sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:177:in ‘initialize’ sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:177:in ‘new’ sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:177:in ‘prepare’ sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:221:in ‘execute’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3/database_statements.rb:32:in ‘block (2 levels) in execute’ activesupport (7.0.8.4) lib/active_support/concurrency/share_lock.rb:187:in ‘yield_shares’ activesupport (7.0.8.4) lib/active_support/dependencies/interlock.rb:41:in ‘permit_concurrent_loads’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3/database_statements.rb:31:in ‘block in execute’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘block in synchronize’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘synchronize’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract_adapter.rb:752:in ‘block in log’ activesupport (7.0.8.4) lib/active_support/notifications/instrumenter.rb:24:in ‘instrument’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract_adapter.rb:743:in ‘log’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3/database_statements.rb:30:in ‘execute’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:628:in ‘add_column’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3_adapter.rb:250:in ‘add_column’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:633:in ‘column’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:274:in ‘block in string’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:274:in ‘each’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:274:in ‘string’ db/migrate/20240920134337_add_devise_to_users.rb:7:in ‘block in up’ activerecord (7.0.8.4) lib/active_record/migration.rb:564:in ‘block in change_table’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:494:in ‘change_table’ activerecord (7.0.8.4) lib/active_record/migration.rb:965:in ‘block in method_missing’ activerecord (7.0.8.4) lib/active_record/migration.rb:935:in ‘block in say_with_time’ C:/Ruby33-x64/lib/ruby/3.3.0/benchmark.rb:298:in ‘measure’ activerecord (7.0.8.4) lib/active_record/migration.rb:935:in ‘say_with_time’ activerecord (7.0.8.4) lib/active_record/migration.rb:954:in ‘method_missing’ activerecord (7.0.8.4) lib/active_record/migration.rb:564:in ‘change_table’ activerecord (7.0.8.4) lib/active_record/migration.rb:695:in ‘method_missing’ db/migrate/20240920134337_add_devise_to_users.rb:5:in ‘up’ activerecord (7.0.8.4) lib/active_record/migration.rb:868:in ‘up’ activerecord (7.0.8.4) lib/active_record/migration.rb:908:in ‘public_send’ activerecord (7.0.8.4) lib/active_record/migration.rb:908:in ‘exec_migration’ activerecord (7.0.8.4) lib/active_record/migration.rb:889:in ‘block (2 levels) in migrate’ C:/Ruby33-x64/lib/ruby/3.3.0/benchmark.rb:298:in ‘measure’ activerecord (7.0.8.4) lib/active_record/migration.rb:888:in ‘block in migrate’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:215:in ‘with_connection’ activerecord (7.0.8.4) lib/active_record/migration.rb:887:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:1095:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:1409:in ‘block in execute_migration_in_transaction’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/transaction.rb:319:in ‘block in within_new_transaction’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘block in synchronize’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘synchronize’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/transaction.rb:317:in ‘within_new_transaction’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/database_statements.rb:316:in ‘transaction’ activerecord (7.0.8.4) lib/active_record/transactions.rb:209:in ‘transaction’ activerecord (7.0.8.4) lib/active_record/migration.rb:1460:in ‘ddl_transaction’ activerecord (7.0.8.4) lib/active_record/migration.rb:1408:in ‘execute_migration_in_transaction’ activerecord (7.0.8.4) lib/active_record/migration.rb:1382:in ‘each’ activerecord (7.0.8.4) lib/active_record/migration.rb:1382:in ‘migrate_without_lock’ activerecord (7.0.8.4) lib/active_record/migration.rb:1333:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:1166:in ‘up’ activerecord (7.0.8.4) lib/active_record/migration.rb:1141:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/tasks/database_tasks.rb:262:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:137:in ‘block in &lt;class:PendingMigrationError&gt;’ activesupport (7.0.8.4) lib/active_support/actionable_error.rb:28:in ‘dispatch’ actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:19:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in ‘call’ web-console (4.2.1) lib/web_console/middleware.rb:132:in ‘call_app’ web-console (4.2.1) lib/web_console/middleware.rb:28:in ‘block in call’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘catch’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in ‘call’ railties (7.0.8.4) lib/rails/rack/logger.rb:40:in ‘call_app’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘block in call’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘block in tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in ‘tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘tagged’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘call’ sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in ‘call’ rack (2.2.9) lib/rack/method_override.rb:24:in ‘call’ rack (2.2.9) lib/rack/runtime.rb:22:in ‘call’ activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in ‘block in call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in ‘collect_events’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in ‘call’ rack (2.2.9) lib/rack/sendfile.rb:110:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in ‘call’ railties (7.0.8.4) lib/rails/engine.rb:530:in ‘call’ puma (5.6.9) lib/puma/configuration.rb:252:in ‘call’ puma (5.6.9) lib/puma/request.rb:77:in ‘block in handle_request’ puma (5.6.9) lib/puma/thread_pool.rb:340:in ‘with_force_shutdown’ puma (5.6.9) lib/puma/request.rb:76:in ‘handle_request’ puma (5.6.9) lib/puma/server.rb:443:in ‘process_client’ puma (5.6.9) lib/puma/thread_pool.rb:147:in ‘block in spawn_thread’</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Migrating to <a href="../CreateBookings.html"><code>CreateBookings</code></a> (20240920134010)</p>
+
+<pre>[1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (1.6ms)[0m  [1m[35mDROP TABLE &quot;bookings&quot;[0m
+[1m[36mActiveRecord::SchemaMigration Delete All (0.2ms)[0m  [1m[31mDELETE FROM &quot;schema_migrations&quot; WHERE &quot;schema_migrations&quot;.&quot;version&quot; = ?[0m  [[&quot;version&quot;, &quot;20240920134010&quot;]]
+[1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Started GET “/” for ::1 at 2024-09-20 14:47:27 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>ActiveRecord::PendingMigrationError (</p>
+
+<p>Migrations are pending. To resolve this issue, run:</p>
+
+<pre>bin/rails db:migrate RAILS_ENV=development</pre>
+
+<p>You have 2 pending migrations:</p>
+
+<p>20240920134010_create_bookings.rb 20240920134337_add_devise_to_users.rb</p>
+
+<p>):</p>
+
+<p>activerecord (7.0.8.4) lib/active_record/migration.rb:662:in ‘check_pending!’ activerecord (7.0.8.4) lib/active_record/migration.rb:627:in ‘block (2 levels) in call’ activesupport (7.0.8.4) lib/active_support/file_update_checker.rb:83:in ‘execute’ activerecord (7.0.8.4) lib/active_record/migration.rb:632:in ‘block in call’ activerecord (7.0.8.4) lib/active_record/migration.rb:624:in ‘synchronize’ activerecord (7.0.8.4) lib/active_record/migration.rb:624:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in ‘block in call’ activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in ‘run_callbacks’ actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in ‘call’ web-console (4.2.1) lib/web_console/middleware.rb:132:in ‘call_app’ web-console (4.2.1) lib/web_console/middleware.rb:28:in ‘block in call’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘catch’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in ‘call’ railties (7.0.8.4) lib/rails/rack/logger.rb:40:in ‘call_app’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘block in call’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘block in tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in ‘tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘tagged’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘call’ sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in ‘call’ rack (2.2.9) lib/rack/method_override.rb:24:in ‘call’ rack (2.2.9) lib/rack/runtime.rb:22:in ‘call’ activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in ‘block in call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in ‘collect_events’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in ‘call’ rack (2.2.9) lib/rack/sendfile.rb:110:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in ‘call’ railties (7.0.8.4) lib/rails/engine.rb:530:in ‘call’ puma (5.6.9) lib/puma/configuration.rb:252:in ‘call’ puma (5.6.9) lib/puma/request.rb:77:in ‘block in handle_request’ puma (5.6.9) lib/puma/thread_pool.rb:340:in ‘with_force_shutdown’ puma (5.6.9) lib/puma/request.rb:76:in ‘handle_request’ puma (5.6.9) lib/puma/server.rb:443:in ‘process_client’ puma (5.6.9) lib/puma/thread_pool.rb:147:in ‘block in spawn_thread’</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Migrating to <a href="../CreateBookings.html"><code>CreateBookings</code></a> (20240920134010)</p>
+
+<pre>[1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE &quot;bookings&quot; (&quot;id&quot; integer PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;user_id&quot; integer NOT NULL, &quot;studio_id&quot; integer NOT NULL, &quot;date&quot; date, &quot;time&quot; time, &quot;band_id&quot; integer NOT NULL, &quot;created_at&quot; datetime(6) NOT NULL, &quot;updated_at&quot; datetime(6) NOT NULL, CONSTRAINT &quot;fk_rails_ef0571f117&quot;</pre>
+
+<p>FOREIGN KEY (“user_id”)</p>
+
+<pre>REFERENCES &quot;users&quot; (&quot;id&quot;)</pre>
+
+<p>, CONSTRAINT “fk_rails_b918745ecb” FOREIGN KEY (“studio_id”)</p>
+
+<pre>REFERENCES &quot;studios&quot; (&quot;id&quot;)</pre>
+
+<p>, CONSTRAINT “fk_rails_c4150c30d6” FOREIGN KEY (“band_id”)</p>
+
+<pre>REFERENCES &quot;bands&quot; (&quot;id&quot;)</pre>
+
+<p>)[0m</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX &quot;index_bookings_on_user_id&quot; ON &quot;bookings&quot; (&quot;user_id&quot;)[0m
+[1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX &quot;index_bookings_on_studio_id&quot; ON &quot;bookings&quot; (&quot;studio_id&quot;)[0m
+[1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX &quot;index_bookings_on_band_id&quot; ON &quot;bookings&quot; (&quot;band_id&quot;)[0m
+[1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20240920134010&quot;]]
+[1m[36mTRANSACTION (13.2ms)[0m  [1m[36mcommit transaction[0m</pre>
+
+<p>Migrating to <a href="../AddDeviseToUsers.html"><code>AddDeviseToUsers</code></a> (20240920134337)</p>
+
+<pre>[1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL[0m
+[1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 14:51:05 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>ActiveRecord::PendingMigrationError (</p>
+
+<p>Migrations are pending. To resolve this issue, run:</p>
+
+<pre>bin/rails db:migrate RAILS_ENV=development</pre>
+
+<p>You have 1 pending migration:</p>
+
+<p>20240920134337_add_devise_to_users.rb</p>
+
+<p>):</p>
+
+<p>activerecord (7.0.8.4) lib/active_record/migration.rb:662:in ‘check_pending!’ activerecord (7.0.8.4) lib/active_record/migration.rb:627:in ‘block (2 levels) in call’ activesupport (7.0.8.4) lib/active_support/file_update_checker.rb:83:in ‘execute’ activerecord (7.0.8.4) lib/active_record/migration.rb:632:in ‘block in call’ activerecord (7.0.8.4) lib/active_record/migration.rb:624:in ‘synchronize’ activerecord (7.0.8.4) lib/active_record/migration.rb:624:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in ‘block in call’ activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in ‘run_callbacks’ actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in ‘call’ web-console (4.2.1) lib/web_console/middleware.rb:132:in ‘call_app’ web-console (4.2.1) lib/web_console/middleware.rb:28:in ‘block in call’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘catch’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in ‘call’ railties (7.0.8.4) lib/rails/rack/logger.rb:40:in ‘call_app’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘block in call’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘block in tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in ‘tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘tagged’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘call’ sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in ‘call’ rack (2.2.9) lib/rack/method_override.rb:24:in ‘call’ rack (2.2.9) lib/rack/runtime.rb:22:in ‘call’ activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in ‘block in call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in ‘collect_events’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in ‘call’ rack (2.2.9) lib/rack/sendfile.rb:110:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in ‘call’ railties (7.0.8.4) lib/rails/engine.rb:530:in ‘call’ puma (5.6.9) lib/puma/configuration.rb:252:in ‘call’ puma (5.6.9) lib/puma/request.rb:77:in ‘block in handle_request’ puma (5.6.9) lib/puma/thread_pool.rb:340:in ‘with_force_shutdown’ puma (5.6.9) lib/puma/request.rb:76:in ‘handle_request’ puma (5.6.9) lib/puma/server.rb:443:in ‘process_client’ puma (5.6.9) lib/puma/thread_pool.rb:147:in ‘block in spawn_thread’ Started POST “/rails/actions” for 127.0.0.1 at 2024-09-20 14:51:13 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Migrating to <a href="../AddDeviseToUsers.html"><code>AddDeviseToUsers</code></a> (20240920134337)</p>
+
+<pre>[1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL[0m
+[1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m</pre>
+
+<p>StandardError (An error has occurred, this and all later migrations canceled:</p>
+
+<p>SQLite3::SQLException: duplicate column name: email):</p>
+
+<p>sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:177:in ‘initialize’ sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:177:in ‘new’ sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:177:in ‘prepare’ sqlite3-1.7.3-x64-mingw (ucrt) lib/sqlite3/database.rb:221:in ‘execute’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3/database_statements.rb:32:in ‘block (2 levels) in execute’ activesupport (7.0.8.4) lib/active_support/concurrency/share_lock.rb:187:in ‘yield_shares’ activesupport (7.0.8.4) lib/active_support/dependencies/interlock.rb:41:in ‘permit_concurrent_loads’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3/database_statements.rb:31:in ‘block in execute’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘block in synchronize’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘synchronize’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract_adapter.rb:752:in ‘block in log’ activesupport (7.0.8.4) lib/active_support/notifications/instrumenter.rb:24:in ‘instrument’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract_adapter.rb:743:in ‘log’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3/database_statements.rb:30:in ‘execute’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:628:in ‘add_column’ activerecord (7.0.8.4) lib/active_record/connection_adapters/sqlite3_adapter.rb:250:in ‘add_column’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:633:in ‘column’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:274:in ‘block in string’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:274:in ‘each’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_definitions.rb:274:in ‘string’ db/migrate/20240920134337_add_devise_to_users.rb:7:in ‘block in up’ activerecord (7.0.8.4) lib/active_record/migration.rb:564:in ‘block in change_table’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:494:in ‘change_table’ activerecord (7.0.8.4) lib/active_record/migration.rb:965:in ‘block in method_missing’ activerecord (7.0.8.4) lib/active_record/migration.rb:935:in ‘block in say_with_time’ C:/Ruby33-x64/lib/ruby/3.3.0/benchmark.rb:298:in ‘measure’ activerecord (7.0.8.4) lib/active_record/migration.rb:935:in ‘say_with_time’ activerecord (7.0.8.4) lib/active_record/migration.rb:954:in ‘method_missing’ activerecord (7.0.8.4) lib/active_record/migration.rb:564:in ‘change_table’ activerecord (7.0.8.4) lib/active_record/migration.rb:695:in ‘method_missing’ db/migrate/20240920134337_add_devise_to_users.rb:5:in ‘up’ activerecord (7.0.8.4) lib/active_record/migration.rb:868:in ‘up’ activerecord (7.0.8.4) lib/active_record/migration.rb:908:in ‘public_send’ activerecord (7.0.8.4) lib/active_record/migration.rb:908:in ‘exec_migration’ activerecord (7.0.8.4) lib/active_record/migration.rb:889:in ‘block (2 levels) in migrate’ C:/Ruby33-x64/lib/ruby/3.3.0/benchmark.rb:298:in ‘measure’ activerecord (7.0.8.4) lib/active_record/migration.rb:888:in ‘block in migrate’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:215:in ‘with_connection’ activerecord (7.0.8.4) lib/active_record/migration.rb:887:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:1095:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:1409:in ‘block in execute_migration_in_transaction’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/transaction.rb:319:in ‘block in within_new_transaction’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in ‘block in synchronize’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘handle_interrupt’ activesupport (7.0.8.4) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in ‘synchronize’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/transaction.rb:317:in ‘within_new_transaction’ activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/database_statements.rb:316:in ‘transaction’ activerecord (7.0.8.4) lib/active_record/transactions.rb:209:in ‘transaction’ activerecord (7.0.8.4) lib/active_record/migration.rb:1460:in ‘ddl_transaction’ activerecord (7.0.8.4) lib/active_record/migration.rb:1408:in ‘execute_migration_in_transaction’ activerecord (7.0.8.4) lib/active_record/migration.rb:1382:in ‘each’ activerecord (7.0.8.4) lib/active_record/migration.rb:1382:in ‘migrate_without_lock’ activerecord (7.0.8.4) lib/active_record/migration.rb:1333:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:1166:in ‘up’ activerecord (7.0.8.4) lib/active_record/migration.rb:1141:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/tasks/database_tasks.rb:262:in ‘migrate’ activerecord (7.0.8.4) lib/active_record/migration.rb:137:in ‘block in &lt;class:PendingMigrationError&gt;’ activesupport (7.0.8.4) lib/active_support/actionable_error.rb:28:in ‘dispatch’ actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:19:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in ‘call’ web-console (4.2.1) lib/web_console/middleware.rb:132:in ‘call_app’ web-console (4.2.1) lib/web_console/middleware.rb:28:in ‘block in call’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘catch’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in ‘call’ railties (7.0.8.4) lib/rails/rack/logger.rb:40:in ‘call_app’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘block in call’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘block in tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in ‘tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘tagged’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘call’ sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in ‘call’ rack (2.2.9) lib/rack/method_override.rb:24:in ‘call’ rack (2.2.9) lib/rack/runtime.rb:22:in ‘call’ activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in ‘block in call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in ‘collect_events’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in ‘call’ rack (2.2.9) lib/rack/sendfile.rb:110:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in ‘call’ railties (7.0.8.4) lib/rails/engine.rb:530:in ‘call’ puma (5.6.9) lib/puma/configuration.rb:252:in ‘call’ puma (5.6.9) lib/puma/request.rb:77:in ‘block in handle_request’ puma (5.6.9) lib/puma/thread_pool.rb:340:in ‘with_force_shutdown’ puma (5.6.9) lib/puma/request.rb:76:in ‘handle_request’ puma (5.6.9) lib/puma/server.rb:443:in ‘process_client’ puma (5.6.9) lib/puma/thread_pool.rb:147:in ‘block in spawn_thread’</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Migrating to <a href="../AddDeviseToUsers.html"><code>AddDeviseToUsers</code></a> (20240920134337)</p>
+
+<pre>[1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL[0m
+[1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 14:57:53 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>ActiveRecord::PendingMigrationError (</p>
+
+<p>Migrations are pending. To resolve this issue, run:</p>
+
+<pre>bin/rails db:migrate RAILS_ENV=development</pre>
+
+<p>You have 2 pending migrations:</p>
+
+<p>20240920134337_add_devise_to_users.rb 20240920135722_add_details_to_users.rb</p>
+
+<p>):</p>
+
+<p>activerecord (7.0.8.4) lib/active_record/migration.rb:662:in ‘check_pending!’ activerecord (7.0.8.4) lib/active_record/migration.rb:627:in ‘block (2 levels) in call’ activesupport (7.0.8.4) lib/active_support/file_update_checker.rb:83:in ‘execute’ activerecord (7.0.8.4) lib/active_record/migration.rb:632:in ‘block in call’ activerecord (7.0.8.4) lib/active_record/migration.rb:624:in ‘synchronize’ activerecord (7.0.8.4) lib/active_record/migration.rb:624:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in ‘block in call’ activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in ‘run_callbacks’ actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in ‘call’ web-console (4.2.1) lib/web_console/middleware.rb:132:in ‘call_app’ web-console (4.2.1) lib/web_console/middleware.rb:28:in ‘block in call’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘catch’ web-console (4.2.1) lib/web_console/middleware.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in ‘call’ railties (7.0.8.4) lib/rails/rack/logger.rb:40:in ‘call_app’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘block in call’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘block in tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in ‘tagged’ activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in ‘tagged’ railties (7.0.8.4) lib/rails/rack/logger.rb:25:in ‘call’ sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in ‘call’ rack (2.2.9) lib/rack/method_override.rb:24:in ‘call’ rack (2.2.9) lib/rack/runtime.rb:22:in ‘call’ activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in ‘block in call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in ‘collect_events’ actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in ‘call’ rack (2.2.9) lib/rack/sendfile.rb:110:in ‘call’ actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in ‘call’ railties (7.0.8.4) lib/rails/engine.rb:530:in ‘call’ puma (5.6.9) lib/puma/configuration.rb:252:in ‘call’ puma (5.6.9) lib/puma/request.rb:77:in ‘block in handle_request’ puma (5.6.9) lib/puma/thread_pool.rb:340:in ‘with_force_shutdown’ puma (5.6.9) lib/puma/request.rb:76:in ‘handle_request’ puma (5.6.9) lib/puma/server.rb:443:in ‘process_client’ puma (5.6.9) lib/puma/thread_pool.rb:147:in ‘block in spawn_thread’</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Migrating to <a href="../AddDeviseToUsers.html"><code>AddDeviseToUsers</code></a> (20240920134337)</p>
+
+<pre>[1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.9ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;encrypted_password&quot; varchar DEFAULT &#39;&#39; NOT NULL[0m
+[1m[35m (0.2ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;reset_password_token&quot; varchar[0m
+[1m[35m (0.2ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;reset_password_sent_at&quot; datetime(6)[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;remember_created_at&quot; datetime(6)[0m
+[1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX &quot;index_users_on_email&quot; ON &quot;users&quot; (&quot;email&quot;)[0m
+[1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX &quot;index_users_on_reset_password_token&quot; ON &quot;users&quot; (&quot;reset_password_token&quot;)[0m
+[1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20240920134337&quot;]]
+[1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m</pre>
+
+<p>Migrating to <a href="../AddDetailsToUsers.html"><code>AddDetailsToUsers</code></a> (20240920135722)</p>
+
+<pre>[1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (1.3ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;full_name&quot; varchar[0m
+[1m[35m (0.6ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;phone_number&quot; varchar[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;user_type&quot; varchar[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;instruments_played&quot; varchar[0m
+[1m[35m (0.2ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;instrument_needed&quot; varchar[0m
+[1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20240920135722&quot;]]
+[1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+[1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT &quot;ar_internal_metadata&quot;.* FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = ? LIMIT ?[0m  [[&quot;key&quot;, &quot;environment&quot;], [&quot;LIMIT&quot;, 1]]
+[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 15:06:01 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by Rails::WelcomeController#index as HTML</p>
+
+<pre>Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/railties-7.0.8.4/lib/rails/templates/rails/welcome/index.html.erb
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/railties-7.0.8.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 27.9ms | Allocations: 518)</pre>
+
+<p>Completed 200 OK in 84ms (Views: 35.7ms | ActiveRecord: 0.0ms | Allocations: 5814)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 15:15:54 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 331)
+Rendered layout layouts/application.html.erb (Duration: 771.6ms | Allocations: 68443)</pre>
+
+<p>Completed 500 Internal Server Error in 814ms (ActiveRecord: 0.0ms | Allocations: 73266)</p>
+
+<p>ActionView::Template::Error (Permission denied @ rb_file_s_rename - (C:/Users/luigi/gagamusic/tmp/cache/assets/sprockets/v4.0.0/5Q/5Qetmp78FUuJawe-Lui6ROvuqDv3JKagclmy7nhT1gE.cache.24000.13192.236873, C:/Users/luigi/gagamusic/tmp/cache/assets/sprockets/v4.0.0/5Q/5Qetmp78FUuJawe-Lui6ROvuqDv3JKagclmy7nhT1gE.cache)):</p>
+
+<p>sprockets (4.2.1) lib/sprockets/path_utils.rb:362:in ‘rename’ sprockets (4.2.1) lib/sprockets/path_utils.rb:362:in ‘atomic_write’ sprockets (4.2.1) lib/sprockets/cache/file_store.rb:112:in ‘set’ sprockets (4.2.1) lib/sprockets/cache.rb:227:in ‘set’ sprockets (4.2.1) lib/sprockets/cache.rb:143:in ‘set’ sprockets (4.2.1) lib/sprockets/loader.rb:265:in ‘store_asset’ sprockets (4.2.1) lib/sprockets/loader.rb:228:in ‘load_from_unloaded’ sprockets (4.2.1) lib/sprockets/loader.rb:59:in ‘block in load’ sprockets (4.2.1) lib/sprockets/loader.rb:339:in ‘fetch_asset_from_dependency_cache’ sprockets (4.2.1) lib/sprockets/loader.rb:43:in ‘load’ sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in ‘block in load’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:207:in ‘block in fetch_or_store’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:187:in ‘fetch’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:206:in ‘fetch_or_store’ sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in ‘load’ sprockets (4.2.1) lib/sprockets/base.rb:81:in ‘find_asset’ sprockets (4.2.1) lib/sprockets/base.rb:88:in ‘find_all_linked_assets’ sprockets (4.2.1) lib/sprockets/manifest.rb:125:in ‘each’ sprockets (4.2.1) lib/sprockets/manifest.rb:125:in ‘to_a’ sprockets (4.2.1) lib/sprockets/manifest.rb:125:in ‘block (2 levels) in find’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in ‘block in execute’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in ‘block in synchronize’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in ‘synchronize’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in ‘synchronize’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in ‘execute’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/promise.rb:564:in ‘block in realize’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in ‘run_task’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in ‘block (3 levels) in create_worker’ &lt;internal:kernel&gt;:187:in ‘loop’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in ‘block (2 levels) in create_worker’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in ‘catch’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in ‘block in create_worker’ Started GET “/” for 127.0.0.1 at 2024-09-20 15:17:09 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 496)
+Rendered layout layouts/application.html.erb (Duration: 536.2ms | Allocations: 69388)</pre>
+
+<p>Completed 500 Internal Server Error in 670ms (ActiveRecord: 0.0ms | Allocations: 78257)</p>
+
+<p>ActionView::Template::Error (Permission denied @ rb_file_s_rename - (C:/Users/luigi/gagamusic/tmp/cache/assets/sprockets/v4.0.0/mU/mUIpkozKgpPyB8CISM_Yy-eP55bf0lVGokGlTS8cp40.cache.24080.16552.161858, C:/Users/luigi/gagamusic/tmp/cache/assets/sprockets/v4.0.0/mU/mUIpkozKgpPyB8CISM_Yy-eP55bf0lVGokGlTS8cp40.cache)):</p>
+
+<p>sprockets (4.2.1) lib/sprockets/path_utils.rb:362:in ‘rename’ sprockets (4.2.1) lib/sprockets/path_utils.rb:362:in ‘atomic_write’ sprockets (4.2.1) lib/sprockets/cache/file_store.rb:112:in ‘set’ sprockets (4.2.1) lib/sprockets/cache.rb:227:in ‘set’ sprockets (4.2.1) lib/sprockets/cache.rb:143:in ‘set’ sprockets (4.2.1) lib/sprockets/loader.rb:268:in ‘store_asset’ sprockets (4.2.1) lib/sprockets/loader.rb:228:in ‘load_from_unloaded’ sprockets (4.2.1) lib/sprockets/loader.rb:59:in ‘block in load’ sprockets (4.2.1) lib/sprockets/loader.rb:339:in ‘fetch_asset_from_dependency_cache’ sprockets (4.2.1) lib/sprockets/loader.rb:43:in ‘load’ sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in ‘block in load’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:207:in ‘block in fetch_or_store’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:187:in ‘fetch’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:206:in ‘fetch_or_store’ sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in ‘load’ sprockets (4.2.1) lib/sprockets/bundle.rb:27:in ‘call’ sprockets (4.2.1) lib/sprockets/processor_utils.rb:84:in ‘call_processor’ sprockets (4.2.1) lib/sprockets/processor_utils.rb:66:in ‘block in call_processors’ sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in ‘reverse_each’ sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in ‘call_processors’ sprockets (4.2.1) lib/sprockets/loader.rb:184:in ‘load_from_unloaded’ sprockets (4.2.1) lib/sprockets/loader.rb:59:in ‘block in load’ sprockets (4.2.1) lib/sprockets/loader.rb:339:in ‘fetch_asset_from_dependency_cache’ sprockets (4.2.1) lib/sprockets/loader.rb:43:in ‘load’ sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in ‘block in load’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:207:in ‘block in fetch_or_store’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:187:in ‘fetch’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:206:in ‘fetch_or_store’ sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in ‘load’ sprockets (4.2.1) lib/sprockets/bundle.rb:32:in ‘block in call’ C:/Ruby33-x64/lib/ruby/3.3.0/set.rb:501:in ‘each_key’ C:/Ruby33-x64/lib/ruby/3.3.0/set.rb:501:in ‘each’ sprockets (4.2.1) lib/sprockets/bundle.rb:31:in ‘call’ sprockets (4.2.1) lib/sprockets/processor_utils.rb:84:in ‘call_processor’ sprockets (4.2.1) lib/sprockets/processor_utils.rb:66:in ‘block in call_processors’ sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in ‘reverse_each’ sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in ‘call_processors’ sprockets (4.2.1) lib/sprockets/loader.rb:184:in ‘load_from_unloaded’ sprockets (4.2.1) lib/sprockets/loader.rb:59:in ‘block in load’ sprockets (4.2.1) lib/sprockets/loader.rb:339:in ‘fetch_asset_from_dependency_cache’ sprockets (4.2.1) lib/sprockets/loader.rb:43:in ‘load’ sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in ‘block in load’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:207:in ‘block in fetch_or_store’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:187:in ‘fetch’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/map.rb:206:in ‘fetch_or_store’ sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in ‘load’ sprockets (4.2.1) lib/sprockets/base.rb:81:in ‘find_asset’ sprockets (4.2.1) lib/sprockets/base.rb:88:in ‘find_all_linked_assets’ sprockets (4.2.1) lib/sprockets/manifest.rb:125:in ‘each’ sprockets (4.2.1) lib/sprockets/manifest.rb:125:in ‘to_a’ sprockets (4.2.1) lib/sprockets/manifest.rb:125:in ‘block (2 levels) in find’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in ‘block in execute’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in ‘block in synchronize’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in ‘synchronize’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in ‘synchronize’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in ‘execute’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/promise.rb:564:in ‘block in realize’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in ‘run_task’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in ‘block (3 levels) in create_worker’ &lt;internal:kernel&gt;:187:in ‘loop’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in ‘block (2 levels) in create_worker’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in ‘catch’ concurrent-ruby (1.3.4) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in ‘block in create_worker’ Started GET “/” for 127.0.0.1 at 2024-09-20 15:25:21 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 331)
+Rendered layout layouts/application.html.erb (Duration: 197.8ms | Allocations: 35932)</pre>
+
+<p>Completed 200 OK in 242ms (Views: 210.2ms | ActiveRecord: 0.0ms | Allocations: 40807)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 15:30:34 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 21.4ms | Allocations: 1026)
+Rendered layout layouts/application.html.erb (Duration: 164.6ms | Allocations: 12938)</pre>
+
+<p>Completed 500 Internal Server Error in 176ms (ActiveRecord: 0.0ms | Allocations: 13789)</p>
+
+<p>ActionView::Template::Error (Missing partial shared/_navbar with {:<a href=":en">locale=&gt;</a>, :<a href=":html">formats=&gt;</a>, :variants=&gt;[], :handlers=&gt;[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.</p>
+
+<p>Searched in:</p>
+
+<pre>* &quot;C:/Users/luigi/gagamusic/app/views&quot;
+* &quot;C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views&quot;
+* &quot;C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/turbo-rails-2.0.9/app/views&quot;
+* &quot;C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/actiontext-7.0.8.4/app/views&quot;
+* &quot;C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/actionmailbox-7.0.8.4/app/views&quot;</pre>
+
+<p>):</p>
+
+<pre>11: &lt;/head&gt;
+12: 
+13: &lt;body&gt;
+14:   &lt;%= render &quot;shared/navbar&quot; %&gt;
+15:   &lt;%= render &quot;shared/flashes&quot; %&gt;
+16: 
+17:   &lt;%= yield %&gt;</pre>
+
+<p>app/views/layouts/application.html.erb:14 Started GET “/” for 127.0.0.1 at 2024-09-20 15:36:42 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1434)
+Rendered shared/_navbar.html.erb (Duration: 33.5ms | Allocations: 677)
+Rendered layout layouts/application.html.erb (Duration: 139.9ms | Allocations: 37256)</pre>
+
+<p>Completed 500 Internal Server Error in 187ms (ActiveRecord: 0.0ms | Allocations: 42082)</p>
+
+<p>ActionView::Template::Error (Missing partial shared/_flashes with {:<a href=":en">locale=&gt;</a>, :<a href=":html">formats=&gt;</a>, :variants=&gt;[], :handlers=&gt;[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.</p>
+
+<p>Searched in:</p>
+
+<pre>* &quot;C:/Users/luigi/gagamusic/app/views&quot;
+* &quot;C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views&quot;
+* &quot;C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/turbo-rails-2.0.9/app/views&quot;
+* &quot;C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/actiontext-7.0.8.4/app/views&quot;
+* &quot;C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/actionmailbox-7.0.8.4/app/views&quot;</pre>
+
+<p>):</p>
+
+<pre>12: 
+13: &lt;body&gt;
+14:   &lt;%= render &quot;shared/navbar&quot; %&gt;
+15:   &lt;%= render &quot;shared/flashes&quot; %&gt;
+16: 
+17:   &lt;%= yield %&gt;
+18:</pre>
+
+<p>app/views/layouts/application.html.erb:15 Started GET “/” for 127.0.0.1 at 2024-09-20 15:37:52 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1434)
+Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 677)
+Rendered shared/_flashes.html.erb (Duration: 4.8ms | Allocations: 203)
+Rendered layout layouts/application.html.erb (Duration: 100.9ms | Allocations: 36061)</pre>
+
+<p>Completed 200 OK in 144ms (Views: 112.9ms | ActiveRecord: 0.0ms | Allocations: 40930)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 15:41:20 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1416)
+Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 681)
+Rendered shared/_flashes.html.erb (Duration: 0.7ms | Allocations: 202)
+Rendered layout layouts/application.html.erb (Duration: 304.5ms | Allocations: 44037)</pre>
+
+<p>Completed 200 OK in 349ms (Views: 317.0ms | ActiveRecord: 0.0ms | Allocations: 48904)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 15:50:27 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1437)
+Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 681)
+Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 202)
+Rendered layout layouts/application.html.erb (Duration: 251.6ms | Allocations: 42547)</pre>
+
+<p>Completed 200 OK in 295ms (Views: 263.4ms | ActiveRecord: 0.0ms | Allocations: 47415)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 15:52:09 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 241)
+Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 3180)</pre>
+
+<p>Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.0ms | Allocations: 3462)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 15:52:25 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 244)
+Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1824)</pre>
+
+<p>Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 2102)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 15:54:32 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1410)
+Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 676)
+Rendered shared/_flashes.html.erb (Duration: 0.7ms | Allocations: 202)
+Rendered layout layouts/application.html.erb (Duration: 235.5ms | Allocations: 41732)</pre>
+
+<p>Completed 200 OK in 281ms (Views: 247.4ms | ActiveRecord: 0.0ms | Allocations: 46601)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-20 15:54:37 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 38.3ms | Allocations: 675)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 134.5ms | Allocations: 4875)
+Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 218)
+Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 22)
+Rendered layout layouts/application.html.erb (Duration: 139.4ms | Allocations: 6544)</pre>
+
+<p>Completed 200 OK in 179ms (Views: 151.2ms | ActiveRecord: 0.7ms | Allocations: 17556)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 15:54:37 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 247)
+Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1829)</pre>
+
+<p>Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2112)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-20 15:54:39 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 130)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1190)
+Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2751)</pre>
+
+<p>Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3387)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 15:54:40 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 235)
+Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1801)</pre>
+
+<p>Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2079)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 15:55:47 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 217)
+Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 1789)</pre>
+
+<p>Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 2069)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 16:06:22 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 21.6ms | Allocations: 827)
+Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 606)
+Rendered shared/_flashes.html.erb (Duration: 0.9ms | Allocations: 175)
+Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 3425)</pre>
+
+<p>Completed 200 OK in 43ms (Views: 39.2ms | ActiveRecord: 0.0ms | Allocations: 4266)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 16:06:46 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1417)
+Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 677)
+Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 203)
+Rendered layout layouts/application.html.erb (Duration: 99.3ms | Allocations: 36218)</pre>
+
+<p>Completed 200 OK in 143ms (Views: 111.6ms | ActiveRecord: 0.0ms | Allocations: 41087)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 16:09:27 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 1426)
+Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 677)
+Rendered shared/_flashes.html.erb (Duration: 1.0ms | Allocations: 203)
+Rendered layout layouts/application.html.erb (Duration: 193.1ms | Allocations: 36186)</pre>
+
+<p>Completed 200 OK in 276ms (Views: 216.5ms | ActiveRecord: 0.0ms | Allocations: 41055)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-20 16:09:34 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 4.5ms | Allocations: 675)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 47.0ms | Allocations: 3822)
+Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 218)
+Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 22)
+Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 5492)</pre>
+
+<p>Completed 200 OK in 142ms (Views: 100.9ms | ActiveRecord: 1.3ms | Allocations: 15946)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-20 16:09:56 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 130)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1190)
+Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 2752)</pre>
+
+<p>Completed 200 OK in 25ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 3375)</p>
+
+<p>Started GET “/users/password/new” for 127.0.0.1 at 2024-09-20 16:09:58 +0100 Processing by Devise::PasswordsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 30.0ms | Allocations: 224)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 202)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 99.5ms | Allocations: 1504)
+Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 218)
+Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 22)
+Rendered layout layouts/application.html.erb (Duration: 124.3ms | Allocations: 3185)</pre>
+
+<p>Completed 200 OK in 152ms (Views: 140.5ms | ActiveRecord: 0.0ms | Allocations: 4249)</p>
+
+<p>Started GET “/users/sign_up” for 127.0.0.1 at 2024-09-20 16:09:58 +0100 Processing by Devise::RegistrationsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 16)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 95)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 92.5ms | Allocations: 1683)
+Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 218)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 22)
+Rendered layout layouts/application.html.erb (Duration: 105.6ms | Allocations: 3353)</pre>
+
+<p>Completed 200 OK in 130ms (Views: 121.8ms | ActiveRecord: 0.0ms | Allocations: 4426)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-20 16:10:03 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 130)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1190)
+Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2751)</pre>
+
+<p>Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 3351)</p>
+
+<p>Started GET “/users/password/new” for 127.0.0.1 at 2024-09-20 16:10:03 +0100 Processing by Devise::PasswordsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 126)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 767)
+Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 2336)</pre>
+
+<p>Completed 200 OK in 27ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 2887)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 16:10:06 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 235)
+Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 1801)</pre>
+
+<p>Completed 200 OK in 18ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 2080)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 16:10:09 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 232)
+Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 1798)</pre>
+
+<p>Completed 200 OK in 37ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 2076)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 16:10:12 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 238)
+Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 1804)</pre>
+
+<p>Completed 200 OK in 20ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 2082)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 16:10:12 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 232)
+Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 1798)</pre>
+
+<p>Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 2076)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 16:10:25 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 232)
+Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 1798)</pre>
+
+<p>Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 2076)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-20 16:12:06 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 130)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1190)
+Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 2751)</pre>
+
+<p>Completed 200 OK in 25ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 3366)</p>
+
+<p>Started GET “/users/password/new” for 127.0.0.1 at 2024-09-20 16:12:14 +0100 Processing by Devise::PasswordsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 126)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 11.9ms | Allocations: 805)
+Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 2582)</pre>
+
+<p>Completed 200 OK in 42ms (Views: 35.5ms | ActiveRecord: 0.0ms | Allocations: 3130)</p>
+
+<p>Started GET “/users/sign_up” for 127.0.0.1 at 2024-09-20 16:12:14 +0100 Processing by Devise::RegistrationsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 77)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1166)
+Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 2751)</pre>
+
+<p>Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 0.0ms | Allocations: 3310)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-20 16:12:24 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 130)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1190)
+Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 2757)</pre>
+
+<p>Completed 200 OK in 39ms (Views: 32.8ms | ActiveRecord: 0.0ms | Allocations: 3380)</p>
+
+<p>Started POST “/users” for 127.0.0.1 at 2024-09-20 16:12:27 +0100 Processing by Devise::RegistrationsController#create as TURBO_STREAM</p>
+
+<pre>Parameters: {&quot;authenticity_token&quot;=&gt;&quot;[FILTERED]&quot;, &quot;user&quot;=&gt;{&quot;email&quot;=&gt;&quot;luigimaretto292@gmail.com&quot;, &quot;password&quot;=&gt;&quot;[FILTERED]&quot;, &quot;password_confirmation&quot;=&gt;&quot;[FILTERED]&quot;}, &quot;commit&quot;=&gt;&quot;Sign up&quot;}
+[1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT ?[0m  [[&quot;email&quot;, &quot;luigimaretto292@gmail.com&quot;], [&quot;LIMIT&quot;, 1]]
+[1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 5.8ms | Allocations: 1257)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 77)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 16.8ms | Allocations: 2440)
+Rendered shared/_navbar.html.erb (Duration: 2.6ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 4002)</pre>
+
+<p>Completed 422 Unprocessable Entity in 781ms (Views: 44.2ms | ActiveRecord: 0.6ms | Allocations: 13428)</p>
+
+<p>Started POST “/users” for 127.0.0.1 at 2024-09-20 16:12:42 +0100 Processing by Devise::RegistrationsController#create as TURBO_STREAM</p>
+
+<pre>Parameters: {&quot;authenticity_token&quot;=&gt;&quot;[FILTERED]&quot;, &quot;user&quot;=&gt;{&quot;email&quot;=&gt;&quot;luigimaretto292@gmail.com&quot;, &quot;password&quot;=&gt;&quot;[FILTERED]&quot;, &quot;password_confirmation&quot;=&gt;&quot;[FILTERED]&quot;}, &quot;commit&quot;=&gt;&quot;Sign up&quot;}
+[1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT ?[0m  [[&quot;email&quot;, &quot;luigimaretto292@gmail.com&quot;], [&quot;LIMIT&quot;, 1]]
+[1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 3.4ms | Allocations: 1064)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 77)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2238)
+Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 3799)</pre>
+
+<p>Completed 422 Unprocessable Entity in 546ms (Views: 25.4ms | ActiveRecord: 0.6ms | Allocations: 8832)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-20 16:13:10 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 130)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 13.4ms | Allocations: 1190)
+Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 2765)</pre>
+
+<p>Completed 200 OK in 33ms (Views: 27.3ms | ActiveRecord: 0.0ms | Allocations: 3403)</p>
+
+<p>Started GET “/users/password/new” for 127.0.0.1 at 2024-09-20 16:13:11 +0100 Processing by Devise::PasswordsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 126)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 771)</pre>
+
+<p>Started GET “/users/sign_up” for 127.0.0.1 at 2024-09-20 16:13:11 +0100</p>
+
+<pre>Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 2609)</pre>
+
+<p>Completed 200 OK in 48ms (Views: 33.9ms | ActiveRecord: 0.0ms | Allocations: 3176)</p>
+
+<p>Processing by Devise::RegistrationsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 77)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1166)
+Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 2741)</pre>
+
+<p>Completed 200 OK in 26ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 3291)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-20 16:13:57 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 238)
+Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 1804)</pre>
+
+<p>Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 2082)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-20 16:14:08 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 130)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1190)
+Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 2751)</pre>
+
+<p>Completed 200 OK in 22ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 3356)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-20 16:14:09 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 130)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1190)
+Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 2751)</pre>
+
+<p>Completed 200 OK in 24ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 3356)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-21 06:29:53 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 53.6ms | Allocations: 1269)
+Rendered shared/_navbar.html.erb (Duration: 78.4ms | Allocations: 677)
+Rendered shared/_flashes.html.erb (Duration: 11.7ms | Allocations: 203)
+Rendered layout layouts/application.html.erb (Duration: 1147.6ms | Allocations: 36134)</pre>
+
+<p>Completed 200 OK in 1436ms (Views: 1202.9ms | ActiveRecord: 0.0ms | Allocations: 41002)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-21 06:29:55 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 138)
+Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 1842)</pre>
+
+<p>Completed 200 OK in 94ms (Views: 74.8ms | ActiveRecord: 0.0ms | Allocations: 2163)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-21 06:30:42 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 49.9ms | Allocations: 676)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 159.3ms | Allocations: 3824)
+Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 218)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 22)
+Rendered layout layouts/application.html.erb (Duration: 165.4ms | Allocations: 5493)</pre>
+
+<p>Completed 200 OK in 225ms (Views: 178.9ms | ActiveRecord: 0.7ms | Allocations: 15968)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-21 06:30:42 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 130)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1190)
+Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2751)</pre>
+
+<p>Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3372)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-26 15:58:27 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 33.6ms | Allocations: 1270)
+Rendered shared/_navbar.html.erb (Duration: 33.0ms | Allocations: 682)
+Rendered shared/_flashes.html.erb (Duration: 7.7ms | Allocations: 203)
+Rendered layout layouts/application.html.erb (Duration: 506.4ms | Allocations: 36099)</pre>
+
+<p>Completed 200 OK in 730ms (Views: 551.5ms | ActiveRecord: 0.0ms | Allocations: 40968)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-26 17:02:02 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 27.0ms | Allocations: 1416)
+Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 676)
+Rendered shared/_flashes.html.erb (Duration: 0.7ms | Allocations: 202)
+Rendered layout layouts/application.html.erb (Duration: 284.0ms | Allocations: 42620)</pre>
+
+<p>Completed 200 OK in 333ms (Views: 297.1ms | ActiveRecord: 0.0ms | Allocations: 47494)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-26 17:03:26 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 22.2ms | Allocations: 815)
+Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 606)
+Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 175)
+Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 3415)</pre>
+
+<p>Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 4256)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-26 17:04:43 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 819)
+Rendered shared/_navbar.html.erb (Duration: 37.5ms | Allocations: 607)
+Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 175)
+Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 3420)</pre>
+
+<p>Completed 200 OK in 59ms (Views: 55.4ms | ActiveRecord: 0.0ms | Allocations: 4264)</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/bootstrap”):</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/assets/font-awesome”):</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-26 17:04:47 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 39.3ms | Allocations: 675)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 155.0ms | Allocations: 3824)
+Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 218)
+Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 22)
+Rendered layout layouts/application.html.erb (Duration: 160.0ms | Allocations: 5497)</pre>
+
+<p>Completed 200 OK in 212ms (Views: 171.0ms | ActiveRecord: 0.7ms | Allocations: 15978)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2024-09-26 17:04:47 +0100 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 130)
+Rendered C:/Users/luigi/.local/share/gem/ruby/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1190)
+Rendered shared/_navbar.html.erb (Duration: 3.7ms | Allocations: 193)
+Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2754)</pre>
+
+<p>Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 3385)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-26 17:05:19 +0100 Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 232)
+Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 173)
+Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 19)
+Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1808)</pre>
+
+<p>Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 2089)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2024-09-26 17:16:13 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a href="../HomeController.html#method-i-index"><code>HomeController#index</code></a> as HTML</p>
+
+<pre>Rendering layout layouts/application.html.erb
+Rendering home/index.html.erb within layouts/application
+Rendered home/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1438)
+Rendered layout layouts/application.html.erb (Duration: 134.1ms | Allocations: 5935)</pre>
+
+<p>Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.0ms | Allocations: 10748)</p>
+
+<p>LoadError (cannot load such file – sassc):</p>
+
+<p>app/views/layouts/application.html.erb:9</p>
+
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.6.3.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

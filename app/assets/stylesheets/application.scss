@@ -1,0 +1,14 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap"; // Import Bootstrap styles after variables
+@import "font-awesome"; // Import Font Awesome after other libraries
+
+// Your CSS partials
+@import "components/index"; // Import your components styles
+@import "pages/index"; // Import general styles for pages
+@import "pages/signup_page"; // Import your custom signup form styles
+@import "pages/login_page"; // Import your custom login form styles

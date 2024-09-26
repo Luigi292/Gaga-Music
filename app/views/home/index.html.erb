@@ -1,8 +1,7 @@
 <%# This is home.html.erb %>
 
 <!-- Banner Section -->
-<div class="banner" style="background-image: url('https://raw.githubusercontent.com/Luigi292/Gaga-Music/refs/heads/master/app/assets/images/Logo%20Gaga.jpeg');">
-
+<div class="banner" style="background-image: url('https://m.media-amazon.com/images/I/91vhgl7+SVL._AC_SL1500_.jpg');">
   <div>
     <h1>Gaga Music</h1>
     <h2>Discover Bands and Join Jam Sessions</h2>
@@ -56,36 +55,39 @@
 </div>
 
 <!-- Questions Section -->
-<div class="questions-section wrapper grid grid-cols-1 md:gap-16 md:grid-cols-2">
-  <div class="questions-left">
-    <h2>Any questions?</h2>
-    <h2>We got you.</h2>
-    <p class="pt-12 font-light">Our FAQ section is a great place to start if you've got a question about your local jam sessions, how we operate, what to expect, or want more details on partnering with us.</p>
-  </div>
-  <div class="questions-right">
-    <div class="accordion mx-auto my-8 w-full">
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <span>How does Gaga Music work?</span>
+<div class="questions-section wrapper">
+  <div class="questions-container">
+    <div class="questions-left">
+      <h2>Any questions?</h2>
+      <h2>We got you.</h2>
+      <p class="pt-12 font-light">Our FAQ section is a great place to start if you've got a question about your local jam sessions, how we operate, what to expect, or want more details on partnering with us.</p>
+    </div>
+
+    <div class="questions-right">
+      <div class="accordion mx-auto my-8 w-full">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>How does Gaga Music work?</span>
+          </div>
+          <div class="accordion-body" style="display: none;">
+            <p class="mb-4 font-light">Gaga Music is a platform that connects musicians with local jam sessions. Simply search for sessions in your area, join them, and enjoy playing music with fellow musicians.</p>
+          </div>
         </div>
-        <div class="accordion-body">
-          <p class="mb-4 font-light">Gaga Music is a platform that connects musicians with local jam sessions. Simply search for sessions in your area, join them, and enjoy playing music with fellow musicians.</p>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>How can I join a jam session?</span>
+          </div>
+          <div class="accordion-body" style="display: none;">
+            <p class="mb-4 font-light">To join a jam session, simply find a session on our platform that suits your schedule, click the 'Join' button, and confirm your participation. Make sure your name appears on the attendee list.</p>
+          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <span>How can I join a jam session?</span>
-        </div>
-        <div class="accordion-body">
-          <p class="mb-4 font-light">To join a jam session, simply find a session on our platform that suits your schedule, click the 'Join' button, and confirm your participation. Make sure your name appears on the attendee list.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <span>Can anybody create a new jam session?</span>
-        </div>
-        <div class="accordion-body">
-          <p class="mb-4 font-light">Yes, you can create a new jam session to connect with other musicians in your area. Just click on the 'Create Session' button and provide the necessary details to get started.</p>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>Can anybody create a new jam session?</span>
+          </div>
+          <div class="accordion-body" style="display: none;">
+            <p class="mb-4 font-light">Yes, you can create a new jam session to connect with other musicians in your area. Just click on the 'Create Session' button and provide the necessary details to get started.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -158,5 +160,24 @@
         wrapper.appendChild(studioItem);
       });
     }
+
+    // Accordion Functionality
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+      header.addEventListener('click', function () {
+        // Toggle the active class to highlight the clicked header
+        header.classList.toggle('active');
+
+        // Find the associated body and toggle its visibility
+        const accordionBody = header.nextElementSibling; // The next sibling is the body
+        if (accordionBody.style.display === "block") {
+          accordionBody.style.display = "none"; // Hide it
+        } else {
+          accordionBody.style.display = "block"; // Show it
+        }
+      });
+    });
   });
 </script>
+
